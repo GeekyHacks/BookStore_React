@@ -1,5 +1,5 @@
 {
-  "name": "sample",
+  "name": "bookstore_react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -50,5 +51,10 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
-  }
+  },
+  "description": "- clone the template to your local machine\r - Make sure you are in the root project directory inside `react_redux_template` folder\r - remove the `package-lock.json` file\r - Change the name in line `\"name\": \"react_reduxtemplate\"` in `package.json`\r - run the following command `npm install` to download the node_modules folder, which include all the packages included in the `package.json` file\r - run `npm start` to see if the react app is working or not\r - run `npx eslint \"**/*.{js,jsx}\"` to test eslint package, it should work smoothly\r - run `npx stylelint \"**/*.{css,scss}\"` to test stylelint package.\r - You are all set. Now you can use this Template for any react project.\r - You can edit the `READMETEMPLATE.md` to suit your project",
+  "main": "index.js",
+  "keywords": [],
+  "author": "GeekyHacks",
+  "license": "ISC"
 }
