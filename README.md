@@ -81,7 +81,7 @@ To get a local copy up and running, follow these steps:
 
 - Open your Terminal in your VSCode.
 - Navigate to the desired directory[folder] to which you want to clone the repository to
-- [Copy & Paste] git clone you find in the code button https://github.com/GeekyHacks/Module2Capstone_Pokemon.git
+- [Copy & Paste] git clone you find in the code button https://github.com/GeekyHacks/BookStore_React.git
 
 ### Prerequisites
 
@@ -96,13 +96,13 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-- git clone https://github.com/GeekyHacks/Module2Capstone_Pokemon.git
+- git clone https://github.com/GeekyHacks/BookStore_React.git
 
 Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/GeekyHacks/Module2Capstone_Pokemon.git
+  git clone https://github.com/GeekyHacks/BookStore_React.git
 
 ```
 
@@ -139,7 +139,7 @@ Must-Install-Project-with-the-Following-Programmes:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/GeekyHacks/Module2Capstone_Pokemon/issues).
+Feel free to check the [issues page](https://github.com/GeekyHacks/BookStore_React/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
