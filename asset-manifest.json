@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/geekybookstore/static/css/main.639cf1f5.css",
-    "main.js": "/geekybookstore/static/js/main.a9a9d20a.js",
-    "static/media/account-circle.svg": "/geekybookstore/static/media/account-circle.baecc24700393071846549d99ecaf191.svg",
-    "index.html": "/geekybookstore/index.html",
-    "main.639cf1f5.css.map": "/geekybookstore/static/css/main.639cf1f5.css.map",
-    "main.a9a9d20a.js.map": "/geekybookstore/static/js/main.a9a9d20a.js.map"
+    "main.css": "/BookStore_React/static/css/main.639cf1f5.css",
+    "main.js": "/BookStore_React/static/js/main.3e8ce4bf.js",
+    "static/media/account-circle.svg": "/BookStore_React/static/media/account-circle.baecc24700393071846549d99ecaf191.svg",
+    "index.html": "/BookStore_React/index.html",
+    "main.639cf1f5.css.map": "/BookStore_React/static/css/main.639cf1f5.css.map",
+    "main.3e8ce4bf.js.map": "/BookStore_React/static/js/main.3e8ce4bf.js.map"
   },
   "entrypoints": [
     "static/css/main.639cf1f5.css",
-    "static/js/main.a9a9d20a.js"
+    "static/js/main.3e8ce4bf.js"
   ]
 }
