@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/geekybookstore/static/css/main.639cf1f5.css",
+    "main.js": "/geekybookstore/static/js/main.fcb8957a.js",
+    "static/media/account-circle.svg": "/geekybookstore/static/media/account-circle.baecc24700393071846549d99ecaf191.svg",
+    "index.html": "/geekybookstore/index.html",
+    "main.639cf1f5.css.map": "/geekybookstore/static/css/main.639cf1f5.css.map",
+    "main.fcb8957a.js.map": "/geekybookstore/static/js/main.fcb8957a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.639cf1f5.css",
+    "static/js/main.fcb8957a.js"
+  ]
+}
