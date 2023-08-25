@@ -1,9 +1,10 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import Books from './components/Books/Books';
+import MainContainer from './components/MainContainer';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './styles/Css/App.css';
+import accountPic from './assets/images/account-circle.svg';
 
 function App() {
   return (
@@ -23,13 +24,16 @@ function App() {
             <Link className="link" to="/contact">
               Contact
             </Link>
+            <Link className="bookstoreTitle" to="/">
+              <img className="accountPic" src={accountPic} alt="" />
+            </Link>
           </div>
         </nav>
 
         <Routes>
           {/* <Route index element={<Home />} /> */}
-          <Route path="/" element={<Books />} />
-          <Route path="/books" element={<Books />} />
+          <Route path="/" element={<MainContainer />} />
+          <Route path="/books" element={<MainContainer />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/*" element={<div className="notFound"> Page not found!! </div>} />
         </Routes>

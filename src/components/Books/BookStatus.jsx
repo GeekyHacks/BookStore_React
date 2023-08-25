@@ -1,13 +1,14 @@
 const BookStatus = () => {
   const result = (
     <div className="BookStatus">
-      <div sx={{ display: 'flex', gap: 2, alignItems: 'center', flexWrap: 'wrap' }}>
+      <div className="progressBar">
         <div size="lg" determinate value="64%">
           64%
         </div>
       </div>
+      <span className="headSpan"></span>
       <div>
-        <h3 className="headSpan">
+        <h3>
           64% <br />
           <span>Completed</span>
         </h3>

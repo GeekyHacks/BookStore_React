@@ -1,12 +1,9 @@
-import BookDetails from './BookDetails';
-import BookStatus from './BookStatus';
-import BookChapter from './BookChapter';
+import Book from './Book';
 const Books = () => {
   const result = (
     <div className="Books">
-      <BookDetails />
-      <BookStatus />
-      <BookChapter />
+      <Book />
+      <Book />
     </div>
   );
   return result;

@@ -5,11 +5,11 @@ const BookDetails = () => {
       <h2>The Hunger Games</h2>
       <span>Author name</span>
       <div>
-        <button type="button">Comments</button>
+        <a type="a">Comments</a>
         <span>|</span>
-        <button type="button">Remove</button>
+        <a type="a">Remove</a>
         <span>|</span>
-        <button type="button">Edit</button>
+        <a type="a">Edit</a>
       </div>
     </div>
   );
