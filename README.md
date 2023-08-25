@@ -19,11 +19,11 @@
 
 # 📗 Table of Contents
 
-- [BookStore_React](#Module2Capstone_Pokemon)
+- [BookStore_React](#BookStore_React)
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 BookStore_React< ](#Module2Capstone_Pokemon)
+- [📖 BookStore_React< ](#BookStore_React)
 - [🚀 Live Demo ](#-live-demo-)
-- [📖 BookStore_React< ](#Module2Capstone_Pokemon)
+- [📖 BookStore_React< ](#BookStore_React)
   - [🛠 Built With HTML, CSS and JavaScript](#-built-with-html-css-and-javascript)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
