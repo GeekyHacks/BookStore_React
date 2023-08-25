@@ -1,7 +1,8 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import MainContainer from './components/MainContainer';
+import MainContainer from './components/Books';
 import Contact from './components/Contact';
+import Categories from './components/Categories';
 import Footer from './components/Footer';
 import './styles/Css/App.css';
 import accountPic from './assets/images/account-circle.svg';
@@ -35,6 +36,7 @@ function App() {
           <Route path="/BookStore_React/" element={<MainContainer />} />
           <Route path="/BookStore_React/books" element={<MainContainer />} />
           <Route path="/BookStore_React/contact" element={<Contact />} />
+          <Route path="/BookStore_React/categories" element={<Categories />} />
           <Route path="/BookStore_React/*" element={<div className="notFound"> Page not found!! </div>} />
         </Routes>
       </div>

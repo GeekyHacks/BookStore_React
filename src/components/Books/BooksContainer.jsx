@@ -1,8 +1,8 @@
 import Book from './Book';
 
-const Books = () => {
+const BooksContainer = () => {
   const result = (
-    <div className="Books">
+    <div className="BooksContainer">
       <Book />
       <Book />
     </div>
@@ -10,4 +10,4 @@ const Books = () => {
   return result;
 };
 
-export default Books;
+export default BooksContainer;

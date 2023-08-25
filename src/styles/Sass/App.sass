@@ -14,13 +14,11 @@ body
     align-items: stretch
     white-space: nowrap
 
-    img
-        max-width: 20px
-        max-height: 17px
     h2, span, h3
         color: $fontColor
         font-weight: 600
         font-size: 1em
+
 button
     @include button
     padding: 3px 8px
@@ -32,6 +30,10 @@ button
 .bookstoreTitle
     color: $secondarycolor
     font-weight: 700
+    @include columnFlex
+    justify-content: center
+    align-items: center
+
 
 .fullWebsite
     @include columnFlex
@@ -39,7 +41,7 @@ button
     align-items: stretch
     gap: 2rem
 
-.App,.Books
+.App,.BooksContainer
     @include columnFlex
     justify-content: center
     // align-items: center
@@ -116,11 +118,11 @@ footer
         button
             flex: .2
 
-.BookDetails,.BookChapter, .MainContainer
+.BookDetails,.BookChapter, .Books
     @include columnFlex
     justify-content: center
     align-items: stretch
-    gap: 1.5rem
+    gap: .5rem
 
 .BookDetails
     gap: .2rem
@@ -186,10 +188,15 @@ nav
     div
         @include rowFlex
         align-items: center !important
+        justify-content: center
         gap: 1rem
 
         span
             align-self: center !important
+
+
+.accountPic
+    max-width: 17px
 
 .HomeComponent
     text-align: left
@@ -232,6 +239,9 @@ nav
     body
 
         font-size: 18px
+    .accountPic
+        max-width: 25px
+
     .navBar
         padding: .2rem 1.5rem
     .headSpan
@@ -240,6 +250,9 @@ nav
 @media (min-width: 999px)
     body
         font-size: 25px
+    .accountPic
+        max-width: 30px
+
     .headSpan
         height: 2.8rem
 
