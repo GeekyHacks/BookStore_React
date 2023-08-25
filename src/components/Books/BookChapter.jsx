@@ -1,21 +1,15 @@
 const BookChapter = () => {
-    const result = (
-      <div className="BookChapter">
-        <div sx={{ display: 'flex', gap: 2, alignItems: 'center', flexWrap: 'wrap' }}>
-          <div size="lg" determinate value="64%">
-            64%
-          </div>
-        </div>
-        <div>
-          <h3 className="headSpan">
-            64% <br />
-            <span>Completed</span>
-          </h3>
-        </div>
+  const result = (
+    <div className="BookChapter">
+      <div className="headfour">
+        <h4>CURRENT CHAPTER</h4>
+        <h3>Chapter 17</h3>
       </div>
-    );
-  
-    return result;
-  };
-  
-  export default BookChapter;
+      <button type="button">UPDATE PROGRESS</button>
+    </div>
+  );
+
+  return result;
+};
+
+export default BookChapter;

@@ -6,7 +6,7 @@
     text-decoration: none
 
 body
-    background: #71a5de
+    background: $secondarycolor
     font-size: 10px
     padding: .2rem
     @include columnFlex
@@ -18,11 +18,22 @@ body
         color: $fontColor
         font-weight: 600
         font-size: 1em
+
 button
     @include button
-    flex: 0 1 25%
+    padding: 3px 8px
+    font-size: .75em
+::placeholder
+    color: $secondarycolor
     font-weight: 600
-    font-size: 1em
+
+.bookstoreTitle
+    color: $secondarycolor
+    font-weight: 700
+    @include columnFlex
+    justify-content: center
+    align-items: center
+
 
 .fullWebsite
     @include columnFlex
@@ -30,23 +41,128 @@ button
     align-items: stretch
     gap: 2rem
 
-.quote
-    white-space: break-spaces
-    margin: 2rem 3rem
-    font-style: italic
-    color: $fontColor
-    font-weight: 600
-    font-size: 1em
-
-.App
+.App,.BooksContainer
     @include columnFlex
     justify-content: center
-    align-items: center
+    // align-items: center
+    gap: .5rem
+footer
+    position: relative
+    top: auto
+    bottom: 0
+    padding: .2rem
+    border: 2px solid $secondarycolor
+    box-shadow: $box-shadow
+    background: $primarycolor
+    a
+        @include link
+        color: blue
 
-.Books
+.Book
     @include rowFlex
-    justify-content: center
+    justify-content: space-between !important
     align-items: center
+    align-self: stretch !important
+    margin: .5rem .7rem
+    padding: .7rem
+    background: $primarycolor
+    border-radius: 3px
+    box-shadow: $box-shadow
+    color: $fontColor
+    gap: 2rem
+    .fstDiv
+        flex: .5
+    .scdDiv
+        flex: .5
+        @include rowFlex
+        justify-content: space-between !important
+        align-items: center
+        gap: 1rem
+    span, a
+        font-size: .75em
+        font-weight: 600
+        opacity: .4
+    a
+        opacity: .6
+.BookChapter
+    gap: .25rem
+    button
+        margin-top: .3rem
+        padding: 3px 10px
+
+.AddBook
+    @include columnFlex
+    justify-content: center
+    gap: .3rem
+    align-self: stretch !important
+    padding: .5rem
+    margin: .2rem
+    background: $primarycolor
+    border-radius: 3px
+    box-shadow: $box-shadow
+    input, button
+        color: $fontColor
+        font-size: .8em
+        padding: 2px
+    h3
+        color: $fontColor
+        font-size: 1.3em
+        font-weight: 800
+    .bookInput
+        @include rowFlex
+        justify-content: space-evenly !important
+        align-items: center
+        gap: 1rem
+        input
+            flex: .4
+        button
+            flex: .2
+
+.BookDetails,.BookChapter, .Books
+    @include columnFlex
+    justify-content: center
+    align-items: stretch
+    gap: .5rem
+
+.BookDetails
+    gap: .2rem
+    h2
+        font-size: 1.3em
+        font-weight: 700
+    div
+        @include rowFlex
+        justify-content: stretch !important
+        align-items: center
+        gap: .5rem
+
+.BookStatus
+    @include rowFlex
+    justify-content: space-between !important
+    align-items: center
+    gap: .4rem
+
+.headSpan
+    border: .01rem solid $fontColor
+    height: 1rem
+    box-shadow: $spanShadow
+    border-radius: .2rem
+    opacity: .2
+.hSpan
+    border: .01rem solid $fontColor
+    width: 98%
+    opacity: .3
+    border-radius: 6px
+    box-shadow: $spanShadow
+    align-self: center
+
+.headfour
+    font-size: .85em !important
+    h3
+        font-weight: 800
+        font-size: 1em
+    h4
+        font-size: .85em
+        opacity: .4
 
 nav
     @include columnFlex
@@ -54,12 +170,14 @@ nav
     gap: .2rem
     justify-content: center
     align-self: stretch
+    box-shadow: $box-shadow
+    background: $primarycolor
 
 .navBar
     @include rowFlex
     justify-content: space-between
     align-items: center
-    border: 2px solid $secondarycolor
+    border: .2px solid $secondarycolor
     padding: .25rem
     align-self: stretch
 
@@ -70,21 +188,15 @@ nav
     div
         @include rowFlex
         align-items: center !important
+        justify-content: center
         gap: 1rem
 
         span
             align-self: center !important
 
-.author
-    margin-top: .3rem
-    font-weight: 700
-    font-style: oblique
 
-.mainSect
-    @include columnFlex
-    justify-content: center
-    align-items: center
-    gap: 2rem
+.accountPic
+    max-width: 17px
 
 .HomeComponent
     text-align: left
@@ -102,6 +214,7 @@ nav
     ol li
         font-size: 1em
         margin-left: 3rem
+
 .notFound
     margin: 3rem auto
     border-radius: 4px
@@ -117,80 +230,34 @@ nav
     align-items: center
     margin: 2rem
 
-#CalculatorContainer
-    margin-top: 2rem
-    max-width: 250px
-    max-height: 400px
-    @include columnFlex
-    justify-content: stretch
-    align-items: stretch
-    box-shadow: $box-shadow
-    background-color: #aecbeb
-    border-radius: 4px
-    gap: .1rem
-    padding: .3rem
-
-::placeholder
-    color: #aecbeb
-    font-weight: 600
-
-#CalcInput
-    flex: 0 1 11%
-    text-align: right
-    border-radius: 4px
-    border: none
-    background: #335c81
-    padding: .5rem
-    color: #aecbeb
-
-    &:active
-        border: none
-
-    &:focus
-        outline: 0
-
 .link
     @include link
     background: none !important
     color: $fontColor
 
-#Btns
-    flex: 1
-    display: flex
-    flex-wrap: wrap
-
-.operator
-    background: #f5b82e !important
-
-#zero
-    flex: 0 1 50%
-
-footer
-    position: relative
-    top: auto
-    bottom: 0
-    padding: .2rem
-    border: 2px solid $secondarycolor
-
-    a
-        @include link
-        color: blue
-
 @media ( min-width: 768px  )
     body
 
         font-size: 18px
+    .accountPic
+        max-width: 25px
+
     .navBar
-
         padding: .2rem 1.5rem
-
-    #CalculatorContainer
-        margin: 3rem
+    .headSpan
+        height: 2.5rem
 
 @media (min-width: 999px)
     body
         font-size: 25px
+    .accountPic
+        max-width: 30px
+
+    .headSpan
+        height: 2.8rem
 
 @media (min-width:1200px)
     body
         font-size: 30px
+    .headSpan
+        height: 3.3rem
