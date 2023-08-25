@@ -12,8 +12,7 @@
 <div align="center">
   <img src="assests/images/Personal-portfolio-with-play.gif"  alt="Personal portfolio video">
   <br>
-   <a href="https://drive.google.com/file/d/1AN1Oph1s-dFzk4pkKvT0cJqSd7RgNPuf/view?usp=sharing">Watch full video </a>
-</div>
+
 
 </div>
 
