@@ -4,7 +4,7 @@ const Footer = () => {
       <footer>
         <h3 className="copyRights">
           Copy rights reserved to
-          <a> GeekyHacks</a>
+          <a href="https://github.com/GeekyHacks"> GeekyHacks</a>
         </h3>
       </footer>
     </div>

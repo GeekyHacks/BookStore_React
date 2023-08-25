@@ -13,9 +13,7 @@ body
     justify-content: center
     align-items: stretch
     white-space: nowrap
-    button
-        @include button
-        padding: 3px 10px
+
     img
         max-width: 20px
         max-height: 17px
@@ -23,6 +21,10 @@ body
         color: $fontColor
         font-weight: 600
         font-size: 1em
+button
+    @include button
+    padding: 3px 8px
+    font-size: .75em
 ::placeholder
     color: $secondarycolor
     font-weight: 600
@@ -42,6 +44,17 @@ body
     justify-content: center
     // align-items: center
     gap: .5rem
+footer
+    position: relative
+    top: auto
+    bottom: 0
+    padding: .2rem
+    border: 2px solid $secondarycolor
+    box-shadow: $box-shadow
+    background: $primarycolor
+    a
+        @include link
+        color: blue
 
 .Book
     @include rowFlex
@@ -69,6 +82,11 @@ body
         opacity: .4
     a
         opacity: .6
+.BookChapter
+    gap: .25rem
+    button
+        margin-top: .3rem
+        padding: 3px 10px
 
 .AddBook
     @include columnFlex
@@ -143,12 +161,6 @@ body
     h4
         font-size: .85em
         opacity: .4
-.BookChapter
-    gap: .25rem
-    button
-        margin-top: .3rem
-        font-size: .75em
-        padding: 3px 10px
 
 nav
     @include columnFlex
@@ -195,6 +207,7 @@ nav
     ol li
         font-size: 1em
         margin-left: 3rem
+
 .notFound
     margin: 3rem auto
     border-radius: 4px
@@ -210,38 +223,10 @@ nav
     align-items: center
     margin: 2rem
 
-#CalcInput
-    flex: 0 1 11%
-    text-align: right
-    border-radius: 4px
-    border: none
-    background: #335c81
-    padding: .5rem
-    color: #aecbeb
-
-    &:active
-        border: none
-
-    &:focus
-        outline: 0
-
 .link
     @include link
     background: none !important
     color: $fontColor
-
-footer
-    position: relative
-    top: auto
-    bottom: 0
-    padding: .2rem
-    border: 2px solid $secondarycolor
-    box-shadow: $box-shadow
-    background: $primarycolor
-
-    a
-        @include link
-        color: blue
 
 @media ( min-width: 768px  )
     body

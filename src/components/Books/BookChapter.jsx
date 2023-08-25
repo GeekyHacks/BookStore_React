@@ -5,7 +5,7 @@ const BookChapter = () => {
         <h4>CURRENT CHAPTER</h4>
         <h3>Chapter 17</h3>
       </div>
-      <button>UPDATE PROGRESS</button>
+      <button type="button">UPDATE PROGRESS</button>
     </div>
   );
 

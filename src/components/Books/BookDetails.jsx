@@ -5,11 +5,17 @@ const BookDetails = () => {
       <h2>The Hunger Games</h2>
       <span>Author name</span>
       <div>
-        <a type="a">Comments</a>
+        <a href="https://github.com/GeekyHacks" type="a">
+          Comments
+        </a>
         <span>|</span>
-        <a type="a">Remove</a>
+        <a href="https://github.com/GeekyHacks" type="a">
+          Remove
+        </a>
         <span>|</span>
-        <a type="a">Edit</a>
+        <a type="a" href="https://github.com/GeekyHacks">
+          Edit
+        </a>
       </div>
     </div>
   );

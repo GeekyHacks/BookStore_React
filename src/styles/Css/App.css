@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -15,31 +16,39 @@ body {
   align-items: stretch;
   white-space: nowrap;
 }
-body button {
-  transition: all 0.5s;
-  border-radius: 2px;
-  color: #03045E !important;
-  background-color: #0077B6 !important;
-  cursor: pointer;
-  text-align: center;
-  border: 1px solid rgba(3, 4, 94, 0.4);
-  padding: 3px 10px;
-}
-body button:active {
-  transform: scale(0.96);
-  background: #1ba8c5 !important;
-}
-body button:focus {
-  outline: 0;
-}
+
 body img {
   max-width: 20px;
   max-height: 17px;
 }
-body h2, body span, body h3 {
-  color: #03045E;
+
+body h2,
+body span,
+body h3 {
+  color: #03045e;
   font-weight: 600;
   font-size: 1em;
+}
+
+button {
+  transition: all 0.5s;
+  border-radius: 2px;
+  color: #03045e !important;
+  background-color: #0077b6 !important;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid rgba(3, 4, 94, 0.4);
+  padding: 3px 8px;
+  font-size: 0.75em;
+}
+
+button:active {
+  transform: scale(0.96);
+  background: #1ba8c5 !important;
+}
+
+button:focus {
+  outline: 0;
 }
 
 ::placeholder {
@@ -60,11 +69,30 @@ body h2, body span, body h3 {
   gap: 2rem;
 }
 
-.App, .Books {
+.App,
+.Books {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
+}
+
+footer {
+  position: relative;
+  top: auto;
+  bottom: 0;
+  padding: 0.2rem;
+  border: 2px solid #1ba8c5;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  background: #caf0f8;
+}
+
+footer a {
+  transition: all 0.5s;
+  opacity: 0.6;
+  cursor: pointer;
+  border: none;
+  color: blue;
 }
 
 .Book {
@@ -75,15 +103,17 @@ body h2, body span, body h3 {
   align-self: stretch !important;
   margin: 0.5rem 0.7rem;
   padding: 0.7rem;
-  background: #CAF0F8;
+  background: #caf0f8;
   border-radius: 3px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  color: #03045E;
+  color: #03045e;
   gap: 2rem;
 }
+
 .Book .fstDiv {
   flex: 0.5;
 }
+
 .Book .scdDiv {
   flex: 0.5;
   display: flex;
@@ -92,13 +122,25 @@ body h2, body span, body h3 {
   align-items: center;
   gap: 1rem;
 }
-.Book span, .Book a {
+
+.Book span,
+.Book a {
   font-size: 0.75em;
   font-weight: 600;
   opacity: 0.4;
 }
+
 .Book a {
   opacity: 0.6;
+}
+
+.BookChapter {
+  gap: 0.25rem;
+}
+
+.BookChapter button {
+  margin-top: 0.3rem;
+  padding: 3px 10px;
 }
 
 .AddBook {
@@ -109,20 +151,24 @@ body h2, body span, body h3 {
   align-self: stretch !important;
   padding: 0.5rem;
   margin: 0.2rem;
-  background: #CAF0F8;
+  background: #caf0f8;
   border-radius: 3px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
-.AddBook input, .AddBook button {
-  color: #03045E;
+
+.AddBook input,
+.AddBook button {
+  color: #03045e;
   font-size: 0.8em;
   padding: 2px;
 }
+
 .AddBook h3 {
-  color: #03045E;
+  color: #03045e;
   font-size: 1.3em;
   font-weight: 800;
 }
+
 .AddBook .bookInput {
   display: flex;
   flex-direction: row;
@@ -130,14 +176,18 @@ body h2, body span, body h3 {
   align-items: center;
   gap: 1rem;
 }
+
 .AddBook .bookInput input {
   flex: 0.4;
 }
+
 .AddBook .bookInput button {
   flex: 0.2;
 }
 
-.BookDetails, .BookChapter, .MainContainer {
+.BookDetails,
+.BookChapter,
+.MainContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,10 +198,12 @@ body h2, body span, body h3 {
 .BookDetails {
   gap: 0.2rem;
 }
+
 .BookDetails h2 {
   font-size: 1.3em;
   font-weight: 700;
 }
+
 .BookDetails div {
   display: flex;
   flex-direction: row;
@@ -169,7 +221,7 @@ body h2, body span, body h3 {
 }
 
 .headSpan {
-  border: 0.01rem solid #03045E;
+  border: 0.01rem solid #03045e;
   height: 1rem;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8), 1px 2px 4px rgba(0, 0, 0, 0.8);
   border-radius: 0.2rem;
@@ -177,7 +229,7 @@ body h2, body span, body h3 {
 }
 
 .hSpan {
-  border: 0.01rem solid #03045E;
+  border: 0.01rem solid #03045e;
   width: 98%;
   opacity: 0.3;
   border-radius: 6px;
@@ -188,22 +240,15 @@ body h2, body span, body h3 {
 .headfour {
   font-size: 0.85em !important;
 }
+
 .headfour h3 {
   font-weight: 800;
   font-size: 1em;
 }
+
 .headfour h4 {
   font-size: 0.85em;
   opacity: 0.4;
-}
-
-.BookChapter {
-  gap: 0.25rem;
-}
-.BookChapter button {
-  margin-top: 0.3rem;
-  font-size: 0.75em;
-  padding: 3px 10px;
 }
 
 nav {
@@ -214,7 +259,7 @@ nav {
   justify-content: center;
   align-self: stretch;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  background: #CAF0F8;
+  background: #caf0f8;
 }
 
 .navBar {
@@ -226,16 +271,19 @@ nav {
   padding: 0.25rem;
   align-self: stretch;
 }
+
 .navBar h2 {
   font-weight: 700 !important;
   font-size: 1em;
 }
+
 .navBar div {
   display: flex;
   flex-direction: row;
   align-items: center !important;
   gap: 1rem;
 }
+
 .navBar div span {
   align-self: center !important;
 }
@@ -245,14 +293,17 @@ nav {
   white-space: normal !important;
   margin: 2rem 3rem;
 }
+
 .HomeComponent h2 {
   font-size: 1.2em;
   font-weight: 600;
 }
+
 .HomeComponent p {
   font-size: 1em;
   margin-left: 0.5rem;
 }
+
 .HomeComponent ol li {
   font-size: 1em;
   margin-left: 3rem;
@@ -276,83 +327,33 @@ nav {
   margin: 2rem;
 }
 
-#CalcInput {
-  flex: 0 1 11%;
-  text-align: right;
-  border-radius: 4px;
-  border: none;
-  background: #335c81;
-  padding: 0.5rem;
-  color: #aecbeb;
-}
-#CalcInput:active {
-  border: none;
-}
-#CalcInput:focus {
-  outline: 0;
-}
-
 .link {
   transition: all 0.5s;
   opacity: 0.6;
-  color: blue;
   cursor: pointer;
   border: none;
   background: none !important;
-  color: #03045E;
-}
-.link:active {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #03045E !important;
-}
-.link:focus {
-  outline: 0;
-}
-
-footer {
-  position: relative;
-  top: auto;
-  bottom: 0;
-  padding: 0.2rem;
-  border: 2px solid #1ba8c5;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  background: #CAF0F8;
-}
-footer a {
-  transition: all 0.5s;
-  opacity: 0.6;
-  color: blue;
-  cursor: pointer;
-  border: none;
-  color: blue;
-}
-footer a:active {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #03045E !important;
-}
-footer a:focus {
-  outline: 0;
+  color: #03045e;
 }
 
 @media (min-width: 768px) {
   body {
     font-size: 18px;
   }
+
   .navBar {
     padding: 0.2rem 1.5rem;
   }
 }
+
 @media (min-width: 999px) {
   body {
     font-size: 25px;
   }
 }
+
 @media (min-width: 1200px) {
   body {
     font-size: 30px;
   }
 }
-
-/*# sourceMappingURL=App.css.map */

@@ -5,7 +5,7 @@ const MainContainer = () => {
   const result = (
     <div className="MainContainer">
       <Books />
-      <span className="hSpan"></span>
+      <span className="hSpan" />
       <AddBook />
     </div>
   );
