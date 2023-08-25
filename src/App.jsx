@@ -11,20 +11,20 @@ function App() {
     <div className="fullWebsite">
       <div className="App">
         <nav className="navBar">
-          <Link className="bookstoreTitle" to="/">
+          <Link className="bookstoreTitle" to="/geekybookstore/">
             Geeky Book Store
           </Link>
           <div className="navLinks">
-            <Link className="link" to="/books">
+            <Link className="link" to="/geekybookstore/books">
               Books
             </Link>
-            <Link className="link" to="/categories">
+            <Link className="link" to="/geekybookstore/categories">
               Categories
             </Link>
-            <Link className="link" to="/contact">
+            <Link className="link" to="/geekybookstore/contact">
               Contact
             </Link>
-            <Link className="bookstoreTitle" to="/">
+            <Link className="bookstoreTitle" to="/geekybookstore/">
               <img className="accountPic" src={accountPic} alt="" />
             </Link>
           </div>
@@ -32,10 +32,10 @@ function App() {
 
         <Routes>
           {/* <Route index element={<Home />} /> */}
-          <Route path="/" element={<MainContainer />} />
-          <Route path="/books" element={<MainContainer />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/*" element={<div className="notFound"> Page not found!! </div>} />
+          <Route path="/geekybookstore/" element={<MainContainer />} />
+          <Route path="/geekybookstore/books" element={<MainContainer />} />
+          <Route path="/geekybookstore/contact" element={<Contact />} />
+          <Route path="/geekybookstore/*" element={<div className="notFound"> Page not found!! </div>} />
         </Routes>
       </div>
       <Footer />

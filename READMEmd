@@ -1,4 +1,4 @@
-# Module 2 Capstone Pokemon
+# BookStore_React
 
 <a name="readme-top"></a>
 
@@ -6,8 +6,8 @@
 
   <br/>
 
-  <h3><b>Module 2 Capstone Pokemon</b></h3>
-  <p>In this project I will be using webpack to bundle my code, the project is about using multiple APIs to show and manipulate data. Styling is done with sass. Jest testing is used for the project. It will include mainly JS, HTML, Sass, and JSON</p>
+  <h3><b>BookStore_React</b></h3>
+  <p>In this Repo I will create a simplified version of bookstore that allows me to: Display a list of books, Add a book, and Remove a selected book. Its an appilcation of using React and Redux in the context of a real application.</p>
 
 <div align="center">
   <img src="assests/images/Personal-portfolio-with-play.gif"  alt="Personal portfolio video">
@@ -19,11 +19,11 @@
 
 # 📗 Table of Contents
 
-- [Module 2 Capstone Pokemon](#Module2Capstone_Pokemon)
+- [BookStore_React](#Module2Capstone_Pokemon)
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Module 2 Capstone Pokemon< ](#Module2Capstone_Pokemon)
+- [📖 BookStore_React< ](#Module2Capstone_Pokemon)
 - [🚀 Live Demo ](#-live-demo-)
-- [📖 Module 2 Capstone Pokemon< ](#Module2Capstone_Pokemon)
+- [📖 BookStore_React< ](#Module2Capstone_Pokemon)
   - [🛠 Built With HTML, CSS and JavaScript](#-built-with-html-css-and-javascript)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -39,16 +39,16 @@
   - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
 
-# 📖 Module 2 Capstone Pokemon< <a name="about-project"></a>
+# 📖 BookStore_React< <a name="about-project"></a>
 
-**Module 2 Capstone Pokemon<e**
-In this project I will be using webpack to bundle my code, the project is about using multiple APIs to show and manipulate data. Styling is done with sass. Jest testing is used for the project. It will include mainly JS, HTML, Sass, and JSON.
+**BookStore_React<e**
+In this Repo I will create a simplified version of bookstore that allows me to: Display a list of books, Add a book, and Remove a selected book. Its an appilcation of using React and Redux in the context of a real application.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://geekyhacks.github.io/Module2Capstone_Pokemon/dist/.)
+- [Live Demo Link](https://geekyhacks.github.io/geekybookstore)
 
-# 📖 Module 2 Capstone Pokemon <a name="live-demo"></a>
+# 📖 BookStore_React <a name="live-demo"></a>
 
 ## 🛠 Built With <a name="built-with">HTML, CSS and JavaScript</a>
 
