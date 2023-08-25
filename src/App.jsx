@@ -11,20 +11,20 @@ function App() {
     <div className="fullWebsite">
       <div className="App">
         <nav className="navBar">
-          <Link className="bookstoreTitle" to="/geekybookstore/">
+          <Link className="bookstoreTitle" to="/BookStore_React/">
             Geeky Book Store
           </Link>
           <div className="navLinks">
-            <Link className="link" to="/geekybookstore/books">
+            <Link className="link" to="/BookStore_React/books">
               Books
             </Link>
-            <Link className="link" to="/geekybookstore/categories">
+            <Link className="link" to="/BookStore_React/categories">
               Categories
             </Link>
-            <Link className="link" to="/geekybookstore/contact">
+            <Link className="link" to="/BookStore_React/contact">
               Contact
             </Link>
-            <Link className="bookstoreTitle" to="/geekybookstore/">
+            <Link className="bookstoreTitle" to="/BookStore_React/">
               <img className="accountPic" src={accountPic} alt="" />
             </Link>
           </div>
@@ -32,10 +32,10 @@ function App() {
 
         <Routes>
           {/* <Route index element={<Home />} /> */}
-          <Route path="/geekybookstore/" element={<MainContainer />} />
-          <Route path="/geekybookstore/books" element={<MainContainer />} />
-          <Route path="/geekybookstore/contact" element={<Contact />} />
-          <Route path="/geekybookstore/*" element={<div className="notFound"> Page not found!! </div>} />
+          <Route path="/BookStore_React/" element={<MainContainer />} />
+          <Route path="/BookStore_React/books" element={<MainContainer />} />
+          <Route path="/BookStore_React/contact" element={<Contact />} />
+          <Route path="/BookStore_React/*" element={<div className="notFound"> Page not found!! </div>} />
         </Routes>
       </div>
       <Footer />
