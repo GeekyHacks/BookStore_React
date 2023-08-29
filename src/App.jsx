@@ -6,7 +6,7 @@ import Categories from './components/Categories';
 import Footer from './components/Footer';
 import './styles/Css/App.css';
 import accountPic from './assets/images/account-circle.svg';
-import Counter from './features/counter/Counter';
+import Counter from './redux/Counter';
 
 function App() {
   return (
@@ -35,9 +35,9 @@ function App() {
         <Route path="/BookStore_React/" element={<MainContainer />} />
         <Route path="/BookStore_React/books" element={<MainContainer />} />
         <Route path="/BookStore_React/contact" element={<Contact />} />
-        <Route path="/BookStore_React/categories" element={<Categories />} />
+        {/* <Route path="/BookStore_React/categories" element={<Categories />} /> */}
         {/* <Route path="/BookStore_React/*" element={<div className="notFound"> Page not found!! </div>} /> */}
-        <Route path="/BookStore_React/*" element={<Counter />} />
+        <Route path="/BookStore_React/categories" element={<Counter />} />
       </Routes>
       <Footer />
     </div>
