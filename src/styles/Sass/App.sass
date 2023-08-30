@@ -34,7 +34,6 @@ button
     justify-content: center
     align-items: center
 
-
 .fullWebsite
     @include columnFlex
     justify-content: space-evenly
@@ -44,12 +43,14 @@ button
 .App,.BooksContainer
     @include columnFlex
     justify-content: center
-    // align-items: center
+    align-items: stretch
     gap: .5rem
 footer
-    position: relative
+    position: fixed
+    align-self: center
+    width: 97%
     top: auto
-    bottom: 0
+    bottom: 0.3rem
     padding: .2rem
     border: 2px solid $secondarycolor
     box-shadow: $box-shadow
@@ -194,7 +195,6 @@ nav
         span
             align-self: center !important
 
-
 .accountPic
     max-width: 17px
 
@@ -214,10 +214,19 @@ nav
     ol li
         font-size: 1em
         margin-left: 3rem
+// .Routes
+//     @include columnFlex
+//     justify-content: center
+//     align-items: stretch
+
+.CategoriesComponent
+    @include columnFlex
+    justify-content: center
+    align-items: stretch
 
 .notFound
-    margin: 3rem auto
     border-radius: 4px
+    margin: 5rem auto
     padding: 4rem
     font-size: 2em
     font-weight: 800
@@ -246,7 +255,8 @@ nav
         padding: .2rem 1.5rem
     .headSpan
         height: 2.5rem
-
+    footer
+        width: 98%
 @media (min-width: 999px)
     body
         font-size: 25px
@@ -261,3 +271,5 @@ nav
         font-size: 30px
     .headSpan
         height: 3.3rem
+    footer
+        width: 98.5%

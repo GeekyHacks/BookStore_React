@@ -73,13 +73,16 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: stretch;
   gap: 0.5rem;
 }
 
 footer {
-  position: relative;
+  position: fixed;
+  align-self: center;
+  width: 97%;
   top: auto;
-  bottom: 0;
+  bottom: 0.3rem;
   padding: 0.2rem;
   border: 2px solid #1ba8c5;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
@@ -313,9 +316,16 @@ nav {
   margin-left: 3rem;
 }
 
+.CategoriesComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
 .notFound {
-  margin: 3rem auto;
   border-radius: 4px;
+  margin: 5rem auto;
   padding: 4rem;
   font-size: 2em;
   font-weight: 800;
@@ -356,6 +366,10 @@ nav {
   .headSpan {
     height: 2.5rem;
   }
+
+  footer {
+    width: 98%;
+  }
 }
 
 @media (min-width: 999px) {
@@ -379,5 +393,9 @@ nav {
 
   .headSpan {
     height: 3.3rem;
+  }
+
+  footer {
+    width: 98.5%;
   }
 }
